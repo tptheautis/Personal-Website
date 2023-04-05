@@ -2,7 +2,7 @@ html, body {
     height: 100%;
 }
 
-.option2, .option3, .option4 {
+option2, option3, option4 {
     border-left: 2px solid white;
     padding-left: 30px;
 }
@@ -28,11 +28,48 @@ header {
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: #014F86;
+    background-image: linear-gradient(white, #4683B7);
+    font-weight: 600;
     gap: 30px;
     font-size: 20px;
     border-radius: 50px;
     width: 500px;
-    height: 75px;
+    height: 60px;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+/*Underline*/
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+a:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+a:hover{
+    color: whitesmoke;
+}
+a:hover:after{
+    width: 100%;
 }
